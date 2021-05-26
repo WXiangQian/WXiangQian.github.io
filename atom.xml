@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>WXiangQian个人博客</title>
+  
+  <subtitle>PHP Programmer.</subtitle>
+  <link href="https://wxiangqian.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://wxiangqian.github.io/"/>
+  <updated>2021-05-26T05:30:53.177Z</updated>
+  <id>https://wxiangqian.github.io/</id>
+  
+  <author>
+    <name>WXiangQian</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下centos配置网卡ip地址、网关、DNS信息</title>
+    <link href="https://wxiangqian.github.io/2021/05/26/linux/Linux%E4%B8%8Bcentos%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1ip%E5%9C%B0%E5%9D%80%E3%80%81%E7%BD%91%E5%85%B3%E3%80%81DNS%E4%BF%A1%E6%81%AF/"/>
+    <id>https://wxiangqian.github.io/2021/05/26/linux/Linux%E4%B8%8Bcentos%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1ip%E5%9C%B0%E5%9D%80%E3%80%81%E7%BD%91%E5%85%B3%E3%80%81DNS%E4%BF%A1%E6%81%AF/</id>
+    <published>2021-05-26T05:29:50.000Z</published>
+    <updated>2021-05-26T05:30:53.177Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;查看网卡信息&quot;&gt;&lt;a href=&quot;#查看网卡信息&quot; class=&quot;headerlink&quot; title=&quot;查看网卡信息&quot;&gt;&lt;/a&gt;查看网卡信息&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;ifconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://wxiangqian.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://wxiangqian.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用hhxsv5/laravel-s的异步任务队列</title>
+    <link href="https://wxiangqian.github.io/2021/01/05/laravel/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hhxsv5-laravel-s%E7%9A%84%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E9%98%9F%E5%88%97/"/>
+    <id>https://wxiangqian.github.io/2021/01/05/laravel/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hhxsv5-laravel-s%E7%9A%84%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E9%98%9F%E5%88%97/</id>
+    <published>2021-01-05T07:40:08.000Z</published>
+    <updated>2021-01-14T02:25:31.618Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你还没有安装&lt;code&gt;hhxsv5/laravel-s&lt;/code&gt;，可以跳转去安装&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel/telescope望远镜在laravel6下安装以及使用</title>
+    <link href="https://wxiangqian.github.io/2020/12/17/laravel/laravel-telescope%E6%9C%9B%E8%BF%9C%E9%95%9C%E5%9C%A8laravel6%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
+    <id>https://wxiangqian.github.io/2020/12/17/laravel/laravel-telescope%E6%9C%9B%E8%BF%9C%E9%95%9C%E5%9C%A8laravel6%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-12-17T03:31:43.000Z</published>
+    <updated>2020-12-17T03:32:21.493Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel下安装laravels以及websocket的使用</title>
+    <link href="https://wxiangqian.github.io/2020/12/10/laravel/laravel%E4%B8%8B%E5%AE%89%E8%A3%85laravels%E4%BB%A5%E5%8F%8Awebsocket%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://wxiangqian.github.io/2020/12/10/laravel/laravel%E4%B8%8B%E5%AE%89%E8%A3%85laravels%E4%BB%A5%E5%8F%8Awebsocket%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-12-10T01:50:32.000Z</published>
+    <updated>2020-12-10T01:58:10.597Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;laravel下安装laravels以及websocket的使用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🚀 LaravelS 是 Swoole 和 Laravel/Lumen 之间开箱即用的适配器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;环境要求&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>揭秘《双11星秀猫巅峰时刻》功能设计</title>
+    <link href="https://wxiangqian.github.io/2020/11/13/php/%E6%8F%AD%E7%A7%98%E3%80%8A%E5%8F%8C11%E6%98%9F%E7%A7%80%E7%8C%AB%E5%B7%85%E5%B3%B0%E6%97%B6%E5%88%BB%E3%80%8B%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://wxiangqian.github.io/2020/11/13/php/%E6%8F%AD%E7%A7%98%E3%80%8A%E5%8F%8C11%E6%98%9F%E7%A7%80%E7%8C%AB%E5%B7%85%E5%B3%B0%E6%97%B6%E5%88%BB%E3%80%8B%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/</id>
+    <published>2020-11-13T07:12:39.000Z</published>
+    <updated>2020-11-13T07:14:00.281Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac下golang环境安装以及新手入门</title>
+    <link href="https://wxiangqian.github.io/2020/11/06/golang/Mac%E4%B8%8Bgolang%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/"/>
+    <id>https://wxiangqian.github.io/2020/11/06/golang/Mac%E4%B8%8Bgolang%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/</id>
+    <published>2020-11-06T02:21:02.000Z</published>
+    <updated>2020-11-06T02:23:36.296Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Mac下golang环境安装以及新手入门&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/img_convert/76455cba1d05bcbdabdd9f425be49da4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="golang" scheme="https://wxiangqian.github.io/categories/golang/"/>
+    
+    
+    <category term="golang" scheme="https://wxiangqian.github.io/tags/golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac下elk、ElasticSearch、logstash、kibana安装</title>
+    <link href="https://wxiangqian.github.io/2020/10/21/MacOS/Mac%E4%B8%8Belk%E3%80%81ElasticSearch%E3%80%81logstas%E3%80%81kibana%E5%AE%89%E8%A3%85/"/>
+    <id>https://wxiangqian.github.io/2020/10/21/MacOS/Mac%E4%B8%8Belk%E3%80%81ElasticSearch%E3%80%81logstas%E3%80%81kibana%E5%AE%89%E8%A3%85/</id>
+    <published>2020-10-21T05:38:41.000Z</published>
+    <updated>2020-10-21T05:42:16.215Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Mac环境：OS X 10.15.5&lt;/p&gt;
+&lt;h3 id=&quot;安装ELK&quot;&gt;&lt;a href=&quot;#安装ELK&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MacOS" scheme="https://wxiangqian.github.io/categories/MacOS/"/>
+    
+    
+    <category term="MacOS" scheme="https://wxiangqian.github.io/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel join 子查询 joinSub的源码剖析</title>
+    <link href="https://wxiangqian.github.io/2020/09/24/laravel/laravel%20join%20%E5%AD%90%E6%9F%A5%E8%AF%A2%20joinSub%E7%9A%84%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/"/>
+    <id>https://wxiangqian.github.io/2020/09/24/laravel/laravel%20join%20%E5%AD%90%E6%9F%A5%E8%AF%A2%20joinSub%E7%9A%84%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/</id>
+    <published>2020-09-24T10:47:25.000Z</published>
+    <updated>2020-09-24T10:48:17.680Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;想实现join中使用子查询的需求，于是根据文档以及源码寻找方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;想要实现的原生sql&quot;&gt;&lt;a href=&quot;#想要实现的原生sql&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel leftjoin on orOn的源码剖析</title>
+    <link href="https://wxiangqian.github.io/2020/09/21/laravel/laravel%20leftjoin%20on%20orOn%E7%9A%84%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/"/>
+    <id>https://wxiangqian.github.io/2020/09/21/laravel/laravel%20leftjoin%20on%20orOn%E7%9A%84%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/</id>
+    <published>2020-09-21T02:20:02.000Z</published>
+    <updated>2020-09-21T06:32:54.676Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;leftjoin连接时需要对不止一个条件进行进行匹配，这时候就需要使用闭包方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;leftjoin(&#39;db&#39;, function ($join) {···});
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;原生join-orOn例子&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Laravel Api 报错429 Too Many Attempts.</title>
+    <link href="https://wxiangqian.github.io/2020/09/10/laravel/Laravel%20Api%20%E6%8A%A5%E9%94%99429%20Too%20Many%20Attempts./"/>
+    <id>https://wxiangqian.github.io/2020/09/10/laravel/Laravel%20Api%20%E6%8A%A5%E9%94%99429%20Too%20Many%20Attempts./</id>
+    <published>2020-09-10T11:33:07.000Z</published>
+    <updated>2020-09-17T10:09:50.738Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;429-Too-Many-Attempts&quot;&gt;&lt;a href=&quot;#429-Too-Many-Attempts&quot; class=&quot;headerlink&quot; title=&quot;429 Too Many Attempts.&quot;&gt;&lt;/a&gt;429 Too Many</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手教你用php实现无限极分类功能</title>
+    <link href="https://wxiangqian.github.io/2020/08/26/php/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8php%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E5%8A%9F%E8%83%BD/"/>
+    <id>https://wxiangqian.github.io/2020/08/26/php/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8php%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E5%8A%9F%E8%83%BD/</id>
+    <published>2020-08-26T09:39:53.000Z</published>
+    <updated>2020-08-26T09:40:37.072Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;php轻松实现无限极分类功能&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文的  &lt;strong&gt;todo&lt;/strong&gt;  都是需要自行修改的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;应用场景&quot;&gt;&lt;a href=&quot;#应用场景&quot; class=&quot;headerlink&quot; title=&quot;应用场景&quot;&gt;&lt;/a&gt;应用场景&lt;/h3&gt;&lt;p&gt;如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;面包屑导航&lt;/li&gt;
+&lt;li&gt;分类（如：商品分类、课程分类、城市）&lt;/li&gt;
+&lt;li&gt;文件夹&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jwt-auth根据token反解析出用户信息</title>
+    <link href="https://wxiangqian.github.io/2020/08/10/php/jwt-auth%E6%A0%B9%E6%8D%AEtoken%E5%8F%8D%E8%A7%A3%E6%9E%90%E5%87%BA%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/"/>
+    <id>https://wxiangqian.github.io/2020/08/10/php/jwt-auth%E6%A0%B9%E6%8D%AEtoken%E5%8F%8D%E8%A7%A3%E6%9E%90%E5%87%BA%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</id>
+    <published>2020-08-10T09:26:23.000Z</published>
+    <updated>2020-08-10T09:26:52.500Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;token解密使用authenticate方法，注意要先setToken：&lt;/p&gt;
+&lt;pre class=&quot; language-lang-php&quot;&gt;&lt;code class=&quot;language-lang-php&quot;&gt;
+use</summary>
+        
+      
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac下安装swoole的步骤以及遇到的问题</title>
+    <link href="https://wxiangqian.github.io/2020/08/03/php/Mac%E4%B8%8B%E5%AE%89%E8%A3%85swoole%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%A5%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://wxiangqian.github.io/2020/08/03/php/Mac%E4%B8%8B%E5%AE%89%E8%A3%85swoole%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%A5%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2020-08-03T12:30:45.000Z</published>
+    <updated>2020-10-21T05:48:40.675Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Swoole 扩展是按照 PHP 标准扩展构建的。使用 phpize 来生成编译检测脚本，./configure 来做编译配置检测，make 进行编译，make install 进行安装。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Swoole官方地址&lt;a href=&quot;https://www.swoole.com&quot;&gt;https://www.swoole.com&lt;/a&gt;&lt;br&gt;Swoole官方文档&lt;a href=&quot;https://wiki.swoole.com&quot;&gt;https://wiki.swoole.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装准备&quot;&gt;&lt;a href=&quot;#安装准备&quot; class=&quot;headerlink&quot; title=&quot;安装准备&quot;&gt;&lt;/a&gt;安装准备&lt;/h3&gt;&lt;p&gt;安装前必须保证系统已经安装了下列软件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;php-7.1 或更高版本&lt;/li&gt;
+&lt;li&gt;gcc-4.8 或更高版本&lt;/li&gt;
+&lt;li&gt;make&lt;/li&gt;
+&lt;li&gt;autoconf&lt;/li&gt;&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下OpenSSL自签ssl证书</title>
+    <link href="https://wxiangqian.github.io/2020/07/28/linux/Linux%E4%B8%8BOpenSSL%E8%87%AA%E7%AD%BEssl%E8%AF%81%E4%B9%A6/"/>
+    <id>https://wxiangqian.github.io/2020/07/28/linux/Linux%E4%B8%8BOpenSSL%E8%87%AA%E7%AD%BEssl%E8%AF%81%E4%B9%A6/</id>
+    <published>2020-07-28T12:46:56.000Z</published>
+    <updated>2020-07-30T05:56:12.359Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;翻遍多篇自签ssl证书资料总结的经验，不过还是推荐用阿里云免费的证书。因内网需要用到的证书，所以使用了自签ssl。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;HTTPS服务是工作在SSL/TLS上的HTTP。&lt;br&gt;首先简单区分一下HTTPS，SSL ，TLS ，OpenSSL这四者的关系：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSL：（Secure Socket Layer，安全套接字层）是在客户端和服务器之间建立一条SSL安全通道的安全协议；&lt;/li&gt;
+&lt;li&gt;TLS：（Transport Layer Security，传输层安全协议），用于两个应用程序之间提供保密性和数据完整性；&lt;/li&gt;
+&lt;li&gt;TLS的前身是SSL；&lt;/li&gt;
+&lt;li&gt;OpenSSL是TLS/SSL协议的开源实现，提供开发库和命令行程序；&lt;/li&gt;
+&lt;li&gt;HTTPS是HTTP的加密版，底层使用的加密协议是TLS。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;结论：SSL/TLS 是协议，OpenSSL是协议的代码实现。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;509证书包含三个文件：key，csr，crt。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;key是服务器上的私钥文件，用于对发送给客户端数据的加密，以及对从客户端接收到数据的解密&lt;/li&gt;
+&lt;li&gt;csr是证书签名请求文件，用于提交给证书颁发机构（CA）对证书签名&lt;/li&gt;
+&lt;li&gt;crt是由证书颁发机构（CA）签名后的证书，或者是开发者自签名的证书，包含证书持有人的信息，持有人的公钥，以及签署者的签名等信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;备注：在密码学中，X.509是一个标准，规范了公开秘钥认证、证书吊销列表、授权凭证、凭证路径验证算法等。&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://wxiangqian.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://wxiangqian.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Laravel Auth 内置登录-根据用户信息实现登录</title>
+    <link href="https://wxiangqian.github.io/2020/07/23/laravel/LaravelAuth%E5%86%85%E7%BD%AE%E7%99%BB%E5%BD%95-%E6%A0%B9%E6%8D%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95/"/>
+    <id>https://wxiangqian.github.io/2020/07/23/laravel/LaravelAuth%E5%86%85%E7%BD%AE%E7%99%BB%E5%BD%95-%E6%A0%B9%E6%8D%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95/</id>
+    <published>2020-07-23T12:56:06.000Z</published>
+    <updated>2020-07-23T12:56:45.553Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;laravel-auth-内置登录-根据用户信息实现登录&quot;&gt;&lt;a href=&quot;#laravel-auth-内置登录-根据用户信息实现登录&quot; class=&quot;headerlink&quot; title=&quot;laravel auth</summary>
+        
+      
+    
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/categories/laravel/"/>
+    
+    
+    <category term="laravel" scheme="https://wxiangqian.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GuzzleHttp cURL errot 60:SSL certificate problem:self signed certificate</title>
+    <link href="https://wxiangqian.github.io/2020/07/22/php/GuzzleHttp-cURL-error%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://wxiangqian.github.io/2020/07/22/php/GuzzleHttp-cURL-error%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <published>2020-07-22T08:12:05.000Z</published>
+    <updated>2020-07-22T08:17:56.803Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;GuzzleHttp cURL error 60: SSL certificate problem: self signed certificate&lt;/p&gt;
+&lt;h3 id=&quot;报错问题&quot;&gt;&lt;a href=&quot;#报错问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac下安装brew遇到的问题以及解决方案</title>
+    <link href="https://wxiangqian.github.io/2020/07/07/MacOS/Mac%E4%B8%8B%E5%AE%89%E8%A3%85brew%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://wxiangqian.github.io/2020/07/07/MacOS/Mac%E4%B8%8B%E5%AE%89%E8%A3%85brew%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <published>2020-07-07T01:20:57.000Z</published>
+    <updated>2020-07-07T01:21:50.731Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Mac下安装brew遇到的坑&quot;&gt;&lt;a href=&quot;#Mac下安装brew遇到的坑&quot; class=&quot;headerlink&quot; title=&quot;Mac下安装brew遇到的坑&quot;&gt;&lt;/a&gt;Mac下安装brew遇到的坑&lt;/h2&gt;&lt;p&gt;版本：Mac OS 10.15.5 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;brew官方地址：&lt;a href=&quot;https://brew.sh/index_zh-cn&quot;&gt;https://brew.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Homebrew是什么&quot;&gt;&lt;a href=&quot;#Homebrew是什么&quot; class=&quot;headerlink&quot; title=&quot;Homebrew是什么&quot;&gt;&lt;/a&gt;Homebrew是什么&lt;/h3&gt;&lt;p&gt;Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="MacOS" scheme="https://wxiangqian.github.io/categories/MacOS/"/>
+    
+    
+    <category term="MacOS" scheme="https://wxiangqian.github.io/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MacOS安装软件时提示文件已损坏</title>
+    <link href="https://wxiangqian.github.io/2020/07/02/MacOS/MacOS%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%96%87%E4%BB%B6%E5%B7%B2%E6%8D%9F%E5%9D%8F/"/>
+    <id>https://wxiangqian.github.io/2020/07/02/MacOS/MacOS%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%96%87%E4%BB%B6%E5%B7%B2%E6%8D%9F%E5%9D%8F/</id>
+    <published>2020-07-02T06:08:46.000Z</published>
+    <updated>2020-07-02T06:11:44.753Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;为什么会出现“文件已损坏”&quot;&gt;&lt;a href=&quot;#为什么会出现“文件已损坏”&quot; class=&quot;headerlink&quot; title=&quot;为什么会出现“文件已损坏”&quot;&gt;&lt;/a&gt;为什么会出现“文件已损坏”&lt;/h3&gt;&lt;p&gt;首先你安装的软件是汉化的或者是破解过的，所以安装完后就提示这个错误。&lt;/p&gt;
+&lt;h3 id=&quot;如何解决“文件已损坏”的问题&quot;&gt;&lt;a href=&quot;#如何解决“文件已损坏”的问题&quot; class=&quot;headerlink&quot; title=&quot;如何解决“文件已损坏”的问题&quot;&gt;&lt;/a&gt;如何解决“文件已损坏”的问题&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="MacOS" scheme="https://wxiangqian.github.io/categories/MacOS/"/>
+    
+    
+    <category term="MacOS" scheme="https://wxiangqian.github.io/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《我的憨憨女友都能看懂学会的PHP区别表格合集》</title>
+    <link href="https://wxiangqian.github.io/2020/05/12/php/%E3%80%8A%E6%88%91%E7%9A%84%E6%86%A8%E6%86%A8%E5%A5%B3%E5%8F%8B%E9%83%BD%E8%83%BD%E7%9C%8B%E6%87%82%E5%AD%A6%E4%BC%9A%E7%9A%84PHP%E5%8C%BA%E5%88%AB%E8%A1%A8%E6%A0%BC%E5%90%88%E9%9B%86%E3%80%8B/"/>
+    <id>https://wxiangqian.github.io/2020/05/12/php/%E3%80%8A%E6%88%91%E7%9A%84%E6%86%A8%E6%86%A8%E5%A5%B3%E5%8F%8B%E9%83%BD%E8%83%BD%E7%9C%8B%E6%87%82%E5%AD%A6%E4%BC%9A%E7%9A%84PHP%E5%8C%BA%E5%88%AB%E8%A1%A8%E6%A0%BC%E5%90%88%E9%9B%86%E3%80%8B/</id>
+    <published>2020-05-12T05:04:06.000Z</published>
+    <updated>2020-10-26T04:45:32.086Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;通俗易懂的表格汇总，带你快速理解两者(或多者)的区别关系&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;持续更新&lt;/strong&gt;~~~，如有遗漏可以评论区告诉我~&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/2020051114405245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMTc1MDIzMTE3,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手教你如何做一套utm广告投放</title>
+    <link href="https://wxiangqian.github.io/2020/05/07/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%A5%97utm%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/"/>
+    <id>https://wxiangqian.github.io/2020/05/07/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%A5%97utm%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/</id>
+    <published>2020-05-07T10:50:49.000Z</published>
+    <updated>2020-05-07T11:02:26.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;设计背景&quot;&gt;&lt;a href=&quot;#设计背景&quot; class=&quot;headerlink&quot; title=&quot;设计背景&quot;&gt;&lt;/a&gt;设计背景&lt;/h3&gt;&lt;p&gt;   目前平台上缺乏对用户来源和生命周期的管理，导致外部投放活动和平台的运营活动无法精确掌握投放效果。这次增加的功能，可以让我们掌握不同的投放、活动所带来的用户质量，从而优化投放及活动手段。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>

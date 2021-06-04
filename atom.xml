@@ -6,7 +6,7 @@
   <link href="https://wxiangqian.github.io/atom.xml" rel="self"/>
   
   <link href="https://wxiangqian.github.io/"/>
-  <updated>2021-05-26T05:30:53.177Z</updated>
+  <updated>2021-06-04T08:24:35.157Z</updated>
   <id>https://wxiangqian.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>盘点2021年PHP开发工程师遇到的面试题</title>
+    <link href="https://wxiangqian.github.io/2021/06/04/php/%E7%9B%98%E7%82%B92021%E5%B9%B4PHP%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%81%87%E5%88%B0%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://wxiangqian.github.io/2021/06/04/php/%E7%9B%98%E7%82%B92021%E5%B9%B4PHP%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%81%87%E5%88%B0%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <published>2021-06-04T08:23:43.000Z</published>
+    <updated>2021-06-04T08:24:35.157Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;好长时间没有写技术实战文章了，是因为最近在准备面试，分享一下在2021年找工作中遇到的问题，没有具体到公司名，只有个别公司拿到了offer。有些问题模糊的想不起来了，暂时能想到的就这些。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;面试岗位基本都为：</summary>
+        
+      
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux下centos配置网卡ip地址、网关、DNS信息</title>
@@ -285,7 +313,7 @@
     <link href="https://wxiangqian.github.io/2020/08/26/php/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8php%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E5%8A%9F%E8%83%BD/"/>
     <id>https://wxiangqian.github.io/2020/08/26/php/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8php%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E5%8A%9F%E8%83%BD/</id>
     <published>2020-08-26T09:39:53.000Z</published>
-    <updated>2020-08-26T09:40:37.072Z</updated>
+    <updated>2021-06-04T08:28:13.840Z</updated>
     
     
     <summary type="html">&lt;p&gt;php轻松实现无限极分类功能&lt;/p&gt;
@@ -516,21 +544,6 @@ use</summary>
     
     
     <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手把手教你如何做一套utm广告投放</title>
-    <link href="https://wxiangqian.github.io/2020/05/07/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%A5%97utm%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/"/>
-    <id>https://wxiangqian.github.io/2020/05/07/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%A5%97utm%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/</id>
-    <published>2020-05-07T10:50:49.000Z</published>
-    <updated>2020-05-07T11:02:26.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;设计背景&quot;&gt;&lt;a href=&quot;#设计背景&quot; class=&quot;headerlink&quot; title=&quot;设计背景&quot;&gt;&lt;/a&gt;设计背景&lt;/h3&gt;&lt;p&gt;   目前平台上缺乏对用户来源和生命周期的管理，导致外部投放活动和平台的运营活动无法精确掌握投放效果。这次增加的功能，可以让我们掌握不同的投放、活动所带来的用户质量，从而优化投放及活动手段。&lt;/p&gt;</summary>
-    
-    
-    
     
   </entry>
   

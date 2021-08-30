@@ -962,38 +962,31 @@ func main() {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/05/golang/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8golang%E5%BC%80%E5%8F%91%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
+                <a href="/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="新手入门golang开发的注意事项">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="go run或build运行后，相对路径路径找不到：no such file or directory">
                         
-                        <span class="card-title">新手入门golang开发的注意事项</span>
+                        <span class="card-title">go run或build运行后，相对路径路径找不到：no such file or directory</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            应用程序入口
-必须是 main 包：package main
-必须是 main ⽅法：func main()
-⽂件名不⼀定是 main.go
-
-退出返回值与其他主要编程语⾔的差异
-
-Go 中 main 函数不⽀持任何返回值
-通过 os.Ex
+                            遇到的问题go build完项目后，在使用绝对路径启动时，发现报错：open ./config/my.ini: no such file or directory
+报错代码如下：
+conf, err := ini.Load(path + "
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1006,7 +999,6 @@ Go 中 main 函数不⽀持任何返回值
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1266,7 +1258,7 @@ Go 中 main 函数不⽀持任何返回值
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">50.2k</span>&nbsp;字
+                class="white-color">51k</span>&nbsp;字
             
             
             

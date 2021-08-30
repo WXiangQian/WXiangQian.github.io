@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>go run或build运行后，相对路径路径找不到：no such file or directory</title>
+      <link href="2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/"/>
+      <url>2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/</url>
+      
+        <content type="html"><![CDATA[<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>go build完项目后，在使用绝对路径启动时，发现<br>报错：<code>open ./config/my.ini: no such file or directory</code></p><p>报错代码如下：</p><pre class=" language-lang-go"><code class="language-lang-go">conf, err := ini.Load(path + "./config/my.ini")    if err != nil {        log.Fatal("配置文件读取失败, err = ", err)}</code></pre><p>我们通过分析以及查询资料得知，Golang的相对路径是相对于执行命令时的目录；自然也就读取不到了</p><h2 id="剖析问题"><a href="#剖析问题" class="headerlink" title="剖析问题"></a>剖析问题</h2><p>我们聚焦在 <code>go run</code> 的输出结果上，发现它是一个临时文件的地址，这是为什么呢？</p><p>在<code>go help run</code>中，我们可以看到</p><pre class=" language-lang-bash"><code class="language-lang-bash">Run compiles and runs the main package comprising the named Go source files.A Go source file is defined to be a file ending in a literal ".go" suffix.</code></pre><p>也就是 <code>go run</code> 执行时会将文件放到 <code>/tmp/go-build...</code>目录下，编译并运行</p><p>因此<code>go run main.go</code>出现<code>/tmp/go-build962610262/b001/exe</code>结果也不奇怪了，因为它已经跑到临时目录下去执行可执行文件了</p><p>这就已经很清楚了，那么我们想想，会出现哪些问题呢</p><ul><li>依赖相对路径的文件，出现路径出错的问题 </li><li>go run 和 go build 不一样，一个到临时目录下执行，一个可手动在编译后的目录下执行，路径的处理方式会不同</li><li>不断go run，不断产生新的临时文件</li></ul><p>这其实就是<strong>根本原因</strong>了，因为 go run 和 go build 的编译文件执行路径并不同，执行的层级也有可能不一样，自然而然就出现各种读取不到的奇怪问题了</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>获取编译后的可执行文件路径<br>将配置文件的相对路径与<code>GetAppPath()</code>的结果相拼接，可解决<code>go build main.go</code>的可执行文件跨目录执行的问题（如：<code>./src/gin-blog/main</code>）</p><pre class=" language-lang-go"><code class="language-lang-go">import (    "path/filepath"    "os"    "os/exec"    "string")func GetAppPath() string {    file, _ := exec.LookPath(os.Args[0])    path, _ := filepath.Abs(file)    index := strings.LastIndex(path, string(os.PathSeparator))    return path[:index]}</code></pre><p>但是这种方式，对于<code>go run</code>依旧无效，这时候就需要2来补救</p><p>通过传递参数指定路径，可解决<code>go run</code>的问题</p><pre class=" language-lang-go"><code class="language-lang-go">package mainimport (    "flag"    "fmt")func main() {    var appPath string    flag.StringVar(&appPath, "app-path", "app-path")    flag.Parse()    fmt.Printf("App path: %s", appPath)}</code></pre><p>运行</p><pre class=" language-lang-bash"><code class="language-lang-bash">go run main.go --app-path "Your project address"</code></pre><h2 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h2><pre class=" language-lang-go"><code class="language-lang-go">file, _ := exec.LookPath(os.Args[0])path, _ := filepath.Abs(file)index := strings.LastIndex(path, string(os.PathSeparator))path = path[:index]conf, err := ini.Load(path + "/config/my.ini")if err != nil {    log.Fatal("配置文件读取失败, err = ", err)}</code></pre><h2 id="相关知识"><a href="#相关知识" class="headerlink" title="相关知识"></a>相关知识</h2><p><a href="https://www.cnblogs.com/pingyeaa/p/12495285.html">Go语言：如何解决读取不到相对路径配置文件问题</a></p><p><a href="https://studygolang.com/articles/12563">聊一聊，Golang “相对”路径问题</a></p><p><a href="https://wxiangqian.blog.csdn.net/article/details/109464542">Mac下golang环境安装以及新手入门</a></p><p><a href="https://wxiangqian.blog.csdn.net/article/details/111358008">新手入门golang开发的注意事项</a></p><p><a href="https://github.com/WXiangQian/go-study">个人学习仓库：偶尔会提交学习代码</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> golang </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新手入门golang开发的注意事项</title>
       <link href="2021/07/05/golang/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8golang%E5%BC%80%E5%8F%91%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
       <url>2021/07/05/golang/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8golang%E5%BC%80%E5%8F%91%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>

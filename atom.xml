@@ -6,7 +6,7 @@
   <link href="https://wxiangqian.github.io/atom.xml" rel="self"/>
   
   <link href="https://wxiangqian.github.io/"/>
-  <updated>2021-07-05T06:26:03.397Z</updated>
+  <updated>2021-08-30T03:36:35.650Z</updated>
   <id>https://wxiangqian.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>go run或build运行后，相对路径路径找不到：no such file or directory</title>
+    <link href="https://wxiangqian.github.io/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/"/>
+    <id>https://wxiangqian.github.io/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/</id>
+    <published>2021-08-30T03:35:36.000Z</published>
+    <updated>2021-08-30T03:36:35.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;遇到的问题&quot;&gt;&lt;a href=&quot;#遇到的问题&quot; class=&quot;headerlink&quot; title=&quot;遇到的问题&quot;&gt;&lt;/a&gt;遇到的问题&lt;/h2&gt;&lt;p&gt;go build完项目后，在使用绝对路径启动时，发现&lt;br&gt;报错：&lt;code&gt;open</summary>
+        
+      
+    
+    
+    
+    <category term="golang" scheme="https://wxiangqian.github.io/categories/golang/"/>
+    
+    
+    <category term="golang" scheme="https://wxiangqian.github.io/tags/golang/"/>
+    
+  </entry>
   
   <entry>
     <title>新手入门golang开发的注意事项</title>
@@ -522,26 +547,6 @@ use</summary>
 &lt;p&gt;brew官方地址：&lt;a href=&quot;https://brew.sh/index_zh-cn&quot;&gt;https://brew.sh&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;Homebrew是什么&quot;&gt;&lt;a href=&quot;#Homebrew是什么&quot; class=&quot;headerlink&quot; title=&quot;Homebrew是什么&quot;&gt;&lt;/a&gt;Homebrew是什么&lt;/h3&gt;&lt;p&gt;Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="MacOS" scheme="https://wxiangqian.github.io/categories/MacOS/"/>
-    
-    
-    <category term="MacOS" scheme="https://wxiangqian.github.io/tags/MacOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MacOS安装软件时提示文件已损坏</title>
-    <link href="https://wxiangqian.github.io/2020/07/02/MacOS/MacOS%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%96%87%E4%BB%B6%E5%B7%B2%E6%8D%9F%E5%9D%8F/"/>
-    <id>https://wxiangqian.github.io/2020/07/02/MacOS/MacOS%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8F%90%E7%A4%BA%E6%96%87%E4%BB%B6%E5%B7%B2%E6%8D%9F%E5%9D%8F/</id>
-    <published>2020-07-02T06:08:46.000Z</published>
-    <updated>2020-07-02T06:11:44.753Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;为什么会出现“文件已损坏”&quot;&gt;&lt;a href=&quot;#为什么会出现“文件已损坏”&quot; class=&quot;headerlink&quot; title=&quot;为什么会出现“文件已损坏”&quot;&gt;&lt;/a&gt;为什么会出现“文件已损坏”&lt;/h3&gt;&lt;p&gt;首先你安装的软件是汉化的或者是破解过的，所以安装完后就提示这个错误。&lt;/p&gt;
-&lt;h3 id=&quot;如何解决“文件已损坏”的问题&quot;&gt;&lt;a href=&quot;#如何解决“文件已损坏”的问题&quot; class=&quot;headerlink&quot; title=&quot;如何解决“文件已损坏”的问题&quot;&gt;&lt;/a&gt;如何解决“文件已损坏”的问题&lt;/h3&gt;</summary>
     
     
     

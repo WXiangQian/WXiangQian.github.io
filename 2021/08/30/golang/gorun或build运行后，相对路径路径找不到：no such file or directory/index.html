@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《吊打面试官》系列之GIT面试篇, WXiangQian的博客,WXiangQian,qq175023117,WXiangQian.github.io">
+    <meta name="keywords" content="go run或build运行后，相对路径路径找不到：no such file or directory, WXiangQian的博客,WXiangQian,qq175023117,WXiangQian.github.io">
     <meta name="description" content="WXiangQian,wxiangqian.github.io,热爱PHP开发，活跃GitHub以及掘金">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《吊打面试官》系列之GIT面试篇 | WXiangQian个人博客</title>
+    <title>go run或build运行后，相对路径路径找不到：no such file or directory | WXiangQian个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《吊打面试官》系列之GIT面试篇</h1>
+                    <h1 class="description center-align post-title">go run或build运行后，相对路径路径找不到：no such file or directory</h1>
                 </div>
             </div>
         </div>
@@ -412,8 +412,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/golang/">
+                                <span class="chip bg-color">golang</span>
                             </a>
                         
                     </div>
@@ -424,8 +424,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/git/" class="post-category">
-                                git
+                            <a href="/categories/golang/" class="post-category">
+                                golang
                             </a>
                         
                     </div>
@@ -437,7 +437,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-15
+                    2021-08-30
                 </div>
                 
 
@@ -446,7 +446,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    897
+                    749
                 </div>
                 
 
@@ -458,99 +458,78 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>为什么要编写这个系列？git不熟悉的面试者很难表现出自己熟悉git工作流，那么教大家如何在面试官面前大展雄风！！！</p>
-</blockquote>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>git是一款代码版本控制软件，目前已被广泛的使用。因此优雅的使用git已经成了开发者的必备技能。 区别于SVN，git的特点是去中心化。</p>
-<h2 id="面试开始"><a href="#面试开始" class="headerlink" title="面试开始"></a>面试开始</h2><p>以下都是面试经常会问到的问题，大家要记住哦！！！</p>
-<a id="more"></a>
-<h4 id="1-平时开发你是用命令行工具还是可视化工具"><a href="#1-平时开发你是用命令行工具还是可视化工具" class="headerlink" title="1.平时开发你是用命令行工具还是可视化工具"></a>1.平时开发你是用命令行工具还是可视化工具</h4><p> 面试官的初衷不是想知道你用什么工具，而是想知道你是否熟悉常用的命令和分支，以及如何团队合作</p>
-<h4 id="2-常用的分支"><a href="#2-常用的分支" class="headerlink" title="2.常用的分支"></a>2.常用的分支</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>master</td>
-<td>主分支</td>
-</tr>
-<tr>
-<td>develop</td>
-<td>开发分支，包含确定即将发布的代码</td>
-</tr>
-<tr>
-<td>feature</td>
-<td>新功能分支，一般一个新功能对应一个分支</td>
-</tr>
-<tr>
-<td>release</td>
-<td>发布定期要上线的功能</td>
-</tr>
-<tr>
-<td>hotfix</td>
-<td>当系统在线上出现bug时，需要火速处理</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>注：</p>
-<blockquote>
-<p>hotfix是从master分支上切下来， master branch（生产服务器）先回滚到上一个稳定版本来避免bug再出现，开发人员处理掉这个bug后进行单 元测试，回归测试之后，master merge hotfix,别忘了develop branch也要merge 它！</p>
-</blockquote>
-<h4 id="3-常用的命令"><a href="#3-常用的命令" class="headerlink" title="3.常用的命令"></a>3.常用的命令</h4><blockquote>
-<p>不要只说 add commit pull push，这样会显得很初级，以下列出的命令还会有很多参数去延伸，大家要多学习哦</p>
-</blockquote>
+                <h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>go build完项目后，在使用绝对路径启动时，发现<br>报错：<code>open ./config/my.ini: no such file or directory</code></p>
+<p>报错代码如下：</p>
+<pre class=" language-lang-go"><code class="language-lang-go">conf, err := ini.Load(path + "./config/my.ini")
+    if err != nil {
+        log.Fatal("配置文件读取失败, err = ", err)
+}
+</code></pre>
+<p>我们通过分析以及查询资料得知，Golang的相对路径是相对于执行命令时的目录；自然也就读取不到了</p>
+<h2 id="剖析问题"><a href="#剖析问题" class="headerlink" title="剖析问题"></a>剖析问题</h2><p>我们聚焦在 <code>go run</code> 的输出结果上，发现它是一个临时文件的地址，这是为什么呢？</p>
+<p>在<code>go help run</code>中，我们可以看到</p>
+<pre class=" language-lang-bash"><code class="language-lang-bash">Run compiles and runs the main package comprising the named Go source files.
+A Go source file is defined to be a file ending in a literal ".go" suffix.
+</code></pre>
+<p>也就是 <code>go run</code> 执行时会将文件放到 <code>/tmp/go-build...</code>目录下，编译并运行</p>
+<p>因此<code>go run main.go</code>出现<code>/tmp/go-build962610262/b001/exe</code>结果也不奇怪了，因为它已经跑到临时目录下去执行可执行文件了</p>
+<p>这就已经很清楚了，那么我们想想，会出现哪些问题呢</p>
 <ul>
-<li>git add </li>
-<li>git commit</li>
-<li>git status</li>
-<li>git pull</li>
-<li>git push</li>
-<li>git merge</li>
-<li>git stash</li>
-<li>git reset</li>
-<li>git log</li>
-<li>git diff </li>
-<li>git remote</li>
-<li>git clone</li>
-<li>git branch</li>
-<li>git config</li>
-<li>git tag</li>
-<li>git rm</li>
-<li>git init</li>
-<li>git fetch</li>
-<li>git cherry-pick</li>
-<li>git rebase</li>
+<li>依赖相对路径的文件，出现路径出错的问题 </li>
+<li>go run 和 go build 不一样，一个到临时目录下执行，一个可手动在编译后的目录下执行，路径的处理方式会不同</li>
+<li>不断go run，不断产生新的临时文件</li>
 </ul>
-<h4 id="4-git-checkout-可以实现哪些功能"><a href="#4-git-checkout-可以实现哪些功能" class="headerlink" title="4.git checkout 可以实现哪些功能"></a>4.git checkout 可以实现哪些功能</h4><ol>
-<li>切换分支 <pre><code>git checkout 分支名
-</code></pre></li>
-<li>创建并切换到新分支    <pre><code>git checkout  -b 分支名
-</code></pre></li>
-<li>撤销对文件的修改（只能撤销掉没有add的文件）<pre><code>git checkout  文件名
-// 撤销所有的文件
-git checkout .
-</code></pre></li>
-</ol>
-<h4 id="5-合并其中一个feature分支有哪几种实现方式"><a href="#5-合并其中一个feature分支有哪几种实现方式" class="headerlink" title="5.合并其中一个feature分支有哪几种实现方式"></a>5.合并其中一个feature分支有哪几种实现方式</h4><p>第一种</p>
-<pre><code>git pull origin feature
-</code></pre><p>第二种</p>
-<pre><code>git merge feature
-</code></pre><h4 id="6-git-pull和git-fetch的区别"><a href="#6-git-pull和git-fetch的区别" class="headerlink" title="6.git pull和git fetch的区别"></a>6.git pull和git fetch的区别</h4><p>首先在作用上他们的功能是大致相同的，都是起到了更新代码的作用。<br><strong>pull=fetch+merge</strong>，pull的话，下拉远程分支并与本地分支合并。<br>fetch只是下拉远程分支，怎么合并，可以自己再做选择。</p>
-<h4 id="7-如何将dev分支的commitid复制到当前分支"><a href="#7-如何将dev分支的commitid复制到当前分支" class="headerlink" title="7.如何将dev分支的commitid复制到当前分支"></a>7.如何将dev分支的commitid复制到当前分支</h4><pre><code>// 先git log 找到想要复制的commitid
-git cherry-pick commitid
-</code></pre><h4 id="8-讲下git的工作流程"><a href="#8-讲下git的工作流程" class="headerlink" title="8.讲下git的工作流程"></a>8.讲下git的工作流程</h4><p><img src="https://img-blog.csdnimg.cn/20200413132623430.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMTc1MDIzMTE3,size_16,color_FFFFFF,t_70" alt="图片来源于网络"><br>没有具体的标准答案，上图是一个工作流程，具体以往下几个知识点分析</p>
-<ul>
-<li>每个分支的作用，以及是干什么的</li>
-<li>对于 feature 流程，都是从 develop 分支发起，分支合并以及功能管理</li>
-<li>对于 hotfix 流程，要从 master 分支发起，修复完要同时合并到 develop 和 master。</li>
-</ul>
-<p>Git flow的优点是清晰可控，缺点是相对复杂，需要同时维护两个长期分支。大多数工具都将master当作默认分支，可是开发是在develop分支进行的，这导致经常要切换分支，非常烦人。</p>
-<h2 id="面试结束"><a href="#面试结束" class="headerlink" title="面试结束"></a>面试结束</h2><p>希望《吊打面试官》系列之GIT面试篇能为你的面试提高通过率！！！<br>祝福每一位小伙伴都能找到满意的工作！！！</p>
+<p>这其实就是<strong>根本原因</strong>了，因为 go run 和 go build 的编译文件执行路径并不同，执行的层级也有可能不一样，自然而然就出现各种读取不到的奇怪问题了</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>获取编译后的可执行文件路径<br>将配置文件的相对路径与<code>GetAppPath()</code>的结果相拼接，可解决<code>go build main.go</code>的可执行文件跨目录执行的问题（如：<code>./src/gin-blog/main</code>）</p>
+<pre class=" language-lang-go"><code class="language-lang-go">import (
+    "path/filepath"
+    "os"
+    "os/exec"
+    "string"
+)
+
+func GetAppPath() string {
+    file, _ := exec.LookPath(os.Args[0])
+    path, _ := filepath.Abs(file)
+    index := strings.LastIndex(path, string(os.PathSeparator))
+
+    return path[:index]
+}
+</code></pre>
+<p>但是这种方式，对于<code>go run</code>依旧无效，这时候就需要2来补救</p>
+<p>通过传递参数指定路径，可解决<code>go run</code>的问题</p>
+<pre class=" language-lang-go"><code class="language-lang-go">package main
+
+import (
+    "flag"
+    "fmt"
+)
+
+func main() {
+    var appPath string
+    flag.StringVar(&appPath, "app-path", "app-path")
+    flag.Parse()
+    fmt.Printf("App path: %s", appPath)
+}
+</code></pre>
+<p>运行</p>
+<pre class=" language-lang-bash"><code class="language-lang-bash">go run main.go --app-path "Your project address"
+</code></pre>
+<h2 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h2><pre class=" language-lang-go"><code class="language-lang-go">file, _ := exec.LookPath(os.Args[0])
+path, _ := filepath.Abs(file)
+index := strings.LastIndex(path, string(os.PathSeparator))
+path = path[:index]
+
+conf, err := ini.Load(path + "/config/my.ini")
+if err != nil {
+    log.Fatal("配置文件读取失败, err = ", err)
+}
+</code></pre>
+<h2 id="相关知识"><a href="#相关知识" class="headerlink" title="相关知识"></a>相关知识</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/pingyeaa/p/12495285.html">Go语言：如何解决读取不到相对路径配置文件问题</a></p>
+<p><a target="_blank" rel="noopener" href="https://studygolang.com/articles/12563">聊一聊，Golang “相对”路径问题</a></p>
+<p><a target="_blank" rel="noopener" href="https://wxiangqian.blog.csdn.net/article/details/109464542">Mac下golang环境安装以及新手入门</a></p>
+<p><a target="_blank" rel="noopener" href="https://wxiangqian.blog.csdn.net/article/details/111358008">新手入门golang开发的注意事项</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/WXiangQian/go-study">个人学习仓库：偶尔会提交学习代码</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -594,7 +573,7 @@ git cherry-pick commitid
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wxiangqian.github.io/2020/04/15/git/%E3%80%8A%E5%90%8A%E6%89%93%E9%9D%A2%E8%AF%95%E5%AE%98%E3%80%8B%E7%B3%BB%E5%88%97%E4%B9%8BGIT%E9%9D%A2%E8%AF%95%E7%AF%87/">https://wxiangqian.github.io/2020/04/15/git/%E3%80%8A%E5%90%8A%E6%89%93%E9%9D%A2%E8%AF%95%E5%AE%98%E3%80%8B%E7%B3%BB%E5%88%97%E4%B9%8BGIT%E9%9D%A2%E8%AF%95%E7%AF%87/</a>
+                    <a href="https://wxiangqian.github.io/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/">https://wxiangqian.github.io/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -632,8 +611,8 @@ git cherry-pick commitid
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/golang/">
+                                    <span class="chip bg-color">golang</span>
                                 </a>
                             
                         </div>
@@ -801,39 +780,52 @@ git cherry-pick commitid
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/04/23/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%8F%AD%E7%A9%BF%E5%88%9B%E4%B8%9A%E5%85%AC%E5%8F%B8%E7%9A%84%E5%A5%97%E8%B7%AF/">
+                <a href="/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="一篇文章揭穿创业公司的套路">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="go run或build运行后，相对路径路径找不到：no such file or directory">
                         
-                        <span class="card-title">一篇文章揭穿创业公司的套路</span>
+                        <span class="card-title">go run或build运行后，相对路径路径找不到：no such file or directory</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            初衷每个初入社会的求职者，都曾经有过找工作被坑的经历。总结了以下潜台词，如果你能全部GET到，那么恭喜你，已被老板们拉入黑名单。
-核心
-「工资4k - 8k」——那工资就是4k
-「工资上不封顶」——就是说说而已，没人会给你一个月一百万月薪的
+                            遇到的问题go build完项目后，在使用绝对路径启动时，发现报错：open ./config/my.ini: no such file or directory
+报错代码如下：
+conf, err := ini.Load(path + "
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            WXiangQian
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/golang/" class="post-category">
+                                    golang
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/golang/">
+                        <span class="chip bg-color">golang</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -845,35 +837,39 @@ git cherry-pick commitid
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/10/php/PHP%E6%8E%A5%E5%85%A5%E6%B5%B7%E5%B0%94%E6%B6%88%E8%B4%B9%E9%87%91%E8%9E%8D/">
+                <a href="/2021/07/05/golang/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8golang%E5%BC%80%E5%8F%91%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="PHP接入海尔消费金融">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="新手入门golang开发的注意事项">
                         
-                        <span class="card-title">PHP接入海尔消费金融</span>
+                        <span class="card-title">新手入门golang开发的注意事项</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-海尔消费金融简称“嗨付”，公司要求接入海尔金融分期，第一次听说这种支付，官方只有java的demo，没有php的，所以下面会提供一些php实战用到的代码
+                            应用程序入口
+必须是 main 包：package main
+必须是 main ⽅法：func main()
+⽂件名不⼀定是 main.go
 
-介绍
-海尔会拉一个微信群，给一个word文档，上面会写着测试环境地址，很简洁，没有
+退出返回值与其他主要编程语⾔的差异
+
+Go 中 main 函数不⽀持任何返回值
+通过 os.Ex
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/php/" class="post-category">
-                                    php
+                            <a href="/categories/golang/" class="post-category">
+                                    golang
                                 </a>
                             
                             
@@ -883,8 +879,8 @@ git cherry-pick commitid
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/php/">
-                        <span class="chip bg-color">php</span>
+                    <a href="/tags/golang/">
+                        <span class="chip bg-color">golang</span>
                     </a>
                     
                 </div>

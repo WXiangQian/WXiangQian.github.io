@@ -6,7 +6,7 @@
   <link href="https://wxiangqian.github.io/atom.xml" rel="self"/>
   
   <link href="https://wxiangqian.github.io/"/>
-  <updated>2021-08-30T03:36:35.650Z</updated>
+  <updated>2021-12-22T12:08:05.728Z</updated>
   <id>https://wxiangqian.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php生成sitemap.xml地图文件</title>
+    <link href="https://wxiangqian.github.io/2021/12/22/php/php%E7%94%9F%E6%88%90sitemap-xml%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B6/"/>
+    <id>https://wxiangqian.github.io/2021/12/22/php/php%E7%94%9F%E6%88%90sitemap-xml%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B6/</id>
+    <published>2021-12-22T12:05:57.000Z</published>
+    <updated>2021-12-22T12:08:05.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/categories/php/"/>
+    
+    
+    <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
+    
+  </entry>
   
   <entry>
     <title>go run或build运行后，相对路径路径找不到：no such file or directory</title>
@@ -531,29 +556,6 @@ use</summary>
     
     
     <category term="php" scheme="https://wxiangqian.github.io/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac下安装brew遇到的问题以及解决方案</title>
-    <link href="https://wxiangqian.github.io/2020/07/07/MacOS/Mac%E4%B8%8B%E5%AE%89%E8%A3%85brew%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>https://wxiangqian.github.io/2020/07/07/MacOS/Mac%E4%B8%8B%E5%AE%89%E8%A3%85brew%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
-    <published>2020-07-07T01:20:57.000Z</published>
-    <updated>2020-07-07T01:21:50.731Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Mac下安装brew遇到的坑&quot;&gt;&lt;a href=&quot;#Mac下安装brew遇到的坑&quot; class=&quot;headerlink&quot; title=&quot;Mac下安装brew遇到的坑&quot;&gt;&lt;/a&gt;Mac下安装brew遇到的坑&lt;/h2&gt;&lt;p&gt;版本：Mac OS 10.15.5 &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;brew官方地址：&lt;a href=&quot;https://brew.sh/index_zh-cn&quot;&gt;https://brew.sh&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;Homebrew是什么&quot;&gt;&lt;a href=&quot;#Homebrew是什么&quot; class=&quot;headerlink&quot; title=&quot;Homebrew是什么&quot;&gt;&lt;/a&gt;Homebrew是什么&lt;/h3&gt;&lt;p&gt;Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="MacOS" scheme="https://wxiangqian.github.io/categories/MacOS/"/>
-    
-    
-    <category term="MacOS" scheme="https://wxiangqian.github.io/tags/MacOS/"/>
     
   </entry>
   

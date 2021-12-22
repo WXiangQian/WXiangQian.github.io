@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Laravel5.5实现图片验证码的获取以及验证api接口, WXiangQian的博客,WXiangQian,qq175023117,WXiangQian.github.io">
+    <meta name="keywords" content="php生成sitemap.xml地图文件, WXiangQian的博客,WXiangQian,qq175023117,WXiangQian.github.io">
     <meta name="description" content="WXiangQian,wxiangqian.github.io,热爱PHP开发，活跃GitHub以及掘金">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Laravel5.5实现图片验证码的获取以及验证api接口 | WXiangQian个人博客</title>
+    <title>php生成sitemap.xml地图文件 | WXiangQian个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -291,12 +291,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Laravel5.5实现图片验证码的获取以及验证api接口</h1>
+                    <h1 class="description center-align post-title">php生成sitemap.xml地图文件</h1>
                 </div>
             </div>
         </div>
@@ -413,8 +413,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/laravel/">
-                                <span class="chip bg-color">laravel</span>
+                            <a href="/tags/php/">
+                                <span class="chip bg-color">php</span>
                             </a>
                         
                     </div>
@@ -425,8 +425,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/laravel/" class="post-category">
-                                laravel
+                            <a href="/categories/php/" class="post-category">
+                                php
                             </a>
                         
                     </div>
@@ -438,7 +438,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-08
+                    2021-12-22
                 </div>
                 
 
@@ -447,7 +447,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    649
+                    1.6k
                 </div>
                 
 
@@ -459,78 +459,242 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>本人感觉用的比较好的验证码包，拿出来分享一下，傻瓜式教程，大佬别喷。</strong></p>
-<a id="more"></a>
-<h2 id="原文链接：https-juejin-im-post-5d0c3ae9f265da1b6b1cdd2b"><a href="#原文链接：https-juejin-im-post-5d0c3ae9f265da1b6b1cdd2b" class="headerlink" title="原文链接：https://juejin.im/post/5d0c3ae9f265da1b6b1cdd2b"></a><a target="_blank" rel="noopener" href="https://juejin.im/post/5d0c3ae9f265da1b6b1cdd2b">原文链接：</a><a target="_blank" rel="noopener" href="https://juejin.im/post/5d0c3ae9f265da1b6b1cdd2b">https://juejin.im/post/5d0c3ae9f265da1b6b1cdd2b</a></h2><p>用户登陆注册，不管前台后台，为了安全性还是需要加入手机短信或图形验证码的，这样安全性会好很多</p>
-<p>因为不同的需求，我们可以返回图片、网址、HTML，根据前端需求来返回相应的数据</p>
-<h2 id="首先要引入图片验证码的composer包"><a href="#首先要引入图片验证码的composer包" class="headerlink" title="首先要引入图片验证码的composer包"></a>首先要引入图片验证码的composer包</h2><p>github地址：<a target="_blank" rel="noopener" href="https://github.com/mewebstudio/captcha">https://github.com/mewebstudio/captcha</a></p>
-<h2 id="安装captcha："><a href="#安装captcha：" class="headerlink" title="安装captcha："></a>安装captcha：</h2><pre><code>composer require mews/captcha 
-</code></pre><p>找到<code>config/app.php下的providers，添加如下代码</code></p>
-<pre><code>\Mews\Captcha\CaptchaServiceProvider::class,
-</code></pre><p>找到<code>config/app.php下的aliases``，添加如下代码</code></p>
-<pre><code>'Captcha' =&gt; Mews\Captcha\Facades\Captcha::class,
-</code></pre><p>引入配置文件，选择相应的包</p>
-<pre><code>php artisan vendor:publish
-</code></pre><p>则生成config/captcha.php</p>
-<p>配置文件中的代码：例如长宽，flat配置等，个人觉得使用默认配置吧，也没什么问题。</p>
-<h1 id="Return-URL"><a href="#Return-URL" class="headerlink" title="Return URL"></a>Return URL</h1><pre><code>captcha_src();
-Captcha::src();
-</code></pre><h3 id="Return-HTML"><a href="#Return-HTML" class="headerlink" title="Return HTML"></a>Return HTML</h3><pre><code>captcha_img();
-Captcha::img();
-</code></pre><h3 id="To-use-different-configurations"><a href="#To-use-different-configurations" class="headerlink" title="To use different configurations"></a>To use different configurations</h3><pre><code>captcha_img('flat');
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><pre><code>首先是要交个人网站的详情页都提交给百度、360、神马、谷歌等搜索引擎。
+如果是简单的列表页，当然可以写好在放到服务器目录下。
+比如博客类动态生成的就必须每天跑脚本去追加写入了。
+本文采用的是laravel框架的command命令来跑脚本，大家可以适合自己项目的写法。
+</code></pre><h2 id="什么是Sitemap？"><a href="#什么是Sitemap？" class="headerlink" title="什么是Sitemap？"></a>什么是Sitemap？</h2><p>Sitemap（即站点地图）就是您网站上各网页的列表。创建并提交Sitemap有助于百度发现并了解您网站上的所有网页。您还可以使用Sitemap提供有关您网站的其他信息，如上次更新日期、Sitemap文件的更新频率等，供百度Spider参考。</p>
+<p>百度对已提交的数据，不保证一定会抓取及索引所有网址。但是，我们会使用Sitemap中的数据来了解网站的结构等信息，这样可以帮助我们改进抓取策略，并在日后能更好地对网站进行抓取。</p>
+<p>此外，Sitemap 与搜索排名没有关系。</p>
+<h2 id="sitemap文件遵循指南"><a href="#sitemap文件遵循指南" class="headerlink" title="sitemap文件遵循指南"></a>sitemap文件遵循指南</h2><ol>
+<li>文本文件每行都必须有一个网址。网址中不能有换行。不应包含网址列表以外的任何信息。                       </li>
+<li>您必须书写完整的网址，包括 http。</li>
+<li>每个文本文件最多可包含 50,000 个网址，并且应小于10MB（10,485,760字节）。如果网站所包含的网址超过 50,000个，则可将列表分割成多个文本文件，然后分别添加每个文件。</li>
+<li>文本文件需使用 UTF-8 编码或GBK编码。</li>
+</ol>
+<h2 id="xml格式详解"><a href="#xml格式详解" class="headerlink" title="xml格式详解"></a>xml格式详解</h2><pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- XML文件需以utf-8编码--&gt;
+&lt;urlset&gt;
+&lt;!--必填标签--&gt;
+    &lt;url&gt;
+        &lt;!--必填标签,这是具体某一个链接的定义入口，每一条数据都要用&lt;url&gt;和&lt;/url&gt;包含在里面，这是必须的 --&gt;
+        &lt;loc&gt;http://www.yoursite.com/yoursite.html&lt;/loc&gt;
+        &lt;!--必填,URL链接地址,长度不得超过256字节--&gt;
+        &lt;lastmod&gt;2009-12-14&lt;/lastmod&gt;
+        &lt;!--可以不提交该标签,用来指定该链接的最后更新时间--&gt;
+        &lt;changefreq&gt;daily&lt;/changefreq&gt;
+        &lt;!--可以不提交该标签,用这个标签告诉此链接可能会出现的更新频率 --&gt;
+        &lt;priority&gt;0.8&lt;/priority&gt;
+        &lt;!--可以不提交该标签,用来指定此链接相对于其他链接的优先权比值，此值定于0.0-1.0之间--&gt;
+    &lt;/url&gt;
+    &lt;url&gt;
+        &lt;loc&gt;http://www.yoursite.com/yoursite2.html&lt;/loc&gt;
+        &lt;lastmod&gt;2010-05-01&lt;/lastmod&gt;
+        &lt;changefreq&gt;daily&lt;/changefreq&gt;
+        &lt;priority&gt;0.8&lt;/priority&gt;
+    &lt;/url&gt;
+&lt;/urlset&gt;
+</code></pre><h2 id="实战代码"><a href="#实战代码" class="headerlink" title="实战代码"></a>实战代码</h2><h3 id="sitemap组件代码"><a href="#sitemap组件代码" class="headerlink" title="sitemap组件代码"></a>sitemap组件代码</h3><pre><code>&lt;?php
+/**
+ * 通用生成sitemap文件
+ * User: WXiangQian
+ */
 
-Captcha::img('inverse');
-</code></pre><h3 id="大家可以参考demo（demo为composer包自带的）"><a href="#大家可以参考demo（demo为composer包自带的）" class="headerlink" title="大家可以参考demo（demo为composer包自带的）"></a>大家可以参考demo（demo为composer包自带的）</h3><pre><code>Route::any('captcha-test', function()
+namespace App\Http\Tools;
+
+class CreateSiteMapXml
+{
+    private $fileDir;
+
+    public function __construct($filePath)
     {
-        if (Request::getMethod() == 'POST')
-        {
-            $rules = ['captcha' =&gt; 'required|captcha'];
-            $validator = Validator::make(Input::all(), $rules);
-            if ($validator-&gt;fails())
-            {
-                echo '&lt;p style="color: #ff0000;"&gt;Incorrect!&lt;/p&gt;';
-            }
-            else
-            {
-                echo '&lt;p style="color: #00ff30;"&gt;Matched :)&lt;/p&gt;';
-            }
+        $this-&gt;mkFolder($filePath);
+        $filePath = rtrim($filePath, '/') . '/';
+        $this-&gt;fileDir = $filePath;
+    }
+
+    /**
+     * 生成sitemaps 入口
+     * @param array $ary msps数组
+     * @param string $parent maps父标签
+     * @param string $type maps类型
+     * @return bool
+     */
+    public function addSiteMap($ary, $parent, $type)
+    {
+        if (empty($ary)) {
+            return false;
         }
 
-        $form = '&lt;form method="post" action="captcha-test"&gt;';
-        $form .= '&lt;input type="hidden" name="_token" value="' . csrf_token() . '"&gt;';
-        $form .= '&lt;p&gt;' . captcha_img() . '&lt;/p&gt;';
-        $form .= '&lt;p&gt;&lt;input type="text" name="captcha"&gt;&lt;/p&gt;';
-        $form .= '&lt;p&gt;&lt;button type="submit" name="check"&gt;Check&lt;/button&gt;&lt;/p&gt;';
-        $form .= '&lt;/form&gt;';
-        return $form;
-    });
-</code></pre><h3 id="本次项目用到的方法如下："><a href="#本次项目用到的方法如下：" class="headerlink" title="本次项目用到的方法如下："></a>本次项目用到的方法如下：</h3><p>路由：get为获取图片验证码，post为验证验证码是否正确</p>
-<pre><code>Route::get('/captcha', 'AllController@captcha');
-Route::post('/captcha/validate', 'AllController@captchaValidate');
-</code></pre><p>控制器中的方法：获取图片验证码返回的是url，如果想返回img标签或者html，请看上面的方法</p>
-<pre><code>public function captcha()
-{
-    $captcha['url'] = captcha_src();
-    return $this-&gt;responseData($captcha);
+        $file = $this-&gt;fileDir . $type . ".xml";//获取最后更新文件
+        $content = $this-&gt;maps($ary, $parent);      //生成片段 maps
+        $f = $this-&gt;readFile($file);
+
+        if (empty($f)) {
+            //获取新文件头部
+            $f = $this-&gt;typeMain();
+        } else {
+            $f = file_get_contents($file);
+        }
+
+        $nf = $this-&gt;strInsert($f, strpos($f, strrchr($f, '&lt;/')), $content);
+        $this-&gt;writeFile($file, $nf);
+    }
+
+    public function ary2maps($idAry, $loc, $cf, $pri)
+    {
+        $lastmod = date('Y-m-d');
+        $ary = array();
+
+        foreach ($idAry as $id) {
+            $ary[] = array(
+                'loc' =&gt; $loc . $id,
+                'lastmod' =&gt; $lastmod,
+                'changefreq' =&gt; $cf,
+                'priority' =&gt; $pri,
+            );
+        }
+
+        return $ary;
+    }
+
+    //读取文件
+    public function readFile($file)
+    {
+        if (empty($file)) {
+            return false;
+        }
+        $f = file_exists($file);
+        return $f ?: '';
+    }
+
+    //写入文件
+    public function writeFile($fileName, $content)
+    {
+        //echo $content;
+        file_put_contents($fileName, $content); //更新其值
+    }
+
+    /**
+     * 通用 maps
+     * @param array $ary
+     * @param string $parent
+     * @return string
+     *
+     */
+    public function maps($ary, $parent): string
+    {
+        $str = '';
+        if (is_array($ary)) {
+            foreach ($ary as $mval) {
+                $str .= "&lt;$parent&gt;\r\n";
+                foreach ($mval as $key =&gt; $val) {
+                    $str .= "    &lt;$key&gt;$val&lt;/$key&gt;\r\n";
+                }
+                $str .= "&lt;/$parent&gt;\r\n";
+            }
+        }
+        return $str;
+    }
+
+    /**
+     * 指定位置前插入字符串
+     * @param string $str 原字符串
+     * @param int $i 位置
+     * @param string $substr 插入的字符串
+     * @return string
+     */
+    public function strInsert($str, $i, $substr): string
+    {
+        $lstr = substr($str, 0, $i);
+        $rstr = substr($str, $i, strlen($str));
+        $newstr = ($lstr . $substr . $rstr);
+        return $newstr;
+    }
+
+    // sitemap type
+    public function typeMain(): string
+    {
+        $xml = "&lt;?xml version='1.0' encoding='UTF-8'?&gt;\r\n&lt;urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' \r\n" .
+            "xmlns:mobile='http://www.sitemaps.org/schemas/sitemap-mobile/1'&gt; \r\n" . "&lt;/urlset&gt;";
+
+        return $xml;
+    }
+
+    // 检查目标文件夹是否存在，如果不存在则自动创建该目录
+    public function mkFolder($path)
+    {
+        if (!is_readable($path)) {
+//            is_file($path) or mkdir($path, 0777);
+            is_file($path) || mkdir($path, 0777) || is_dir($path);
+        }
+    }
+
 }
-</code></pre><p>前端把验证码传过来进行验证</p>
-<pre><code>public function captchaValidate(Request $request)
+</code></pre><h3 id="调用sitemap组件"><a href="#调用sitemap组件" class="headerlink" title="调用sitemap组件"></a>调用sitemap组件</h3><pre><code>&lt;?php
+
+namespace App\Console\Commands;
+
+use App\Http\Tools\CreateSiteMapXml;
+use Illuminate\Console\Command;
+
+class CreateSiteMapXmlCommand extends Command
 {
-   $rules = ['captcha' =&gt; 'required|captcha'];
-   $validator = \Validator::make($request-&gt;all(), $rules);
-   if ($validator-&gt;fails()){
-       return $this-&gt;responseFailed('验证失败');
-   } else {
-       return $this-&gt;responseSuccess('验证成功');
-   }
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'create_sitemap_xml';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = '生成sitemap.xml文件';
+
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        $idAry = [
+            117281450,
+            110532521,
+            105240627,
+            105558534,
+        ];
+        $name = 'csdn';
+        // 服务器目录地址
+        $sitemaps = new CreateSiteMapXml('/Users/wxiangqian/my_project/laravel-api/sitemaps/');
+        $videoAry = $sitemaps-&gt;ary2maps($idAry, 'https://wxiangqian.blog.csdn.net/article/details/', 'daily', '0.8');
+
+        $sitemaps-&gt;addSiteMap($videoAry, 'url', $name);
+
+    }
 }
-</code></pre><p>如果一直返回验证失败，则需要在app/Http/Kernel.php中的$middleware加入以下信息</p>
-<pre><code>\Illuminate\Session\Middleware\StartSession::class
-</code></pre><h3 id="配上接口文档图片："><a href="#配上接口文档图片：" class="headerlink" title="配上接口文档图片："></a>配上接口文档图片：</h3><p><img src="https://img-blog.csdn.net/2018083118290433?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMTc1MDIzMTE3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="image"></p>
-<p>获取如下验证码<br>d6qfe</p>
-<p>验证验证码是否正确</p>
-<p><img src="https://img-blog.csdn.net/20180831182951127?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMTc1MDIzMTE3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="image"></p>
-<h1 id="纯原创，所有作品都是经验所得，希望可以获得大家的支持。"><a href="#纯原创，所有作品都是经验所得，希望可以获得大家的支持。" class="headerlink" title="纯原创，所有作品都是经验所得，希望可以获得大家的支持。"></a>纯原创，所有作品都是经验所得，希望可以获得大家的支持。</h1><script>
+</code></pre><h2 id="仓库地址"><a href="#仓库地址" class="headerlink" title="仓库地址"></a>仓库地址</h2><p><a target="_blank" rel="noopener" href="https://github.com/WXiangQian/laravel-api">https://github.com/WXiangQian/laravel-api</a></p>
+<h2 id="实战截图"><a href="#实战截图" class="headerlink" title="实战截图"></a>实战截图</h2><p><img src="https://img-blog.csdnimg.cn/6b3ce9321b3e4794832c3470be64ba69.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAV1hpYW5nUWlhbueOi-WFiOajrg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="相关问题"><a href="#相关问题" class="headerlink" title="相关问题"></a>相关问题</h2><h3 id="Sitemap提交后，多久能被百度处理？"><a href="#Sitemap提交后，多久能被百度处理？" class="headerlink" title="Sitemap提交后，多久能被百度处理？"></a>Sitemap提交后，多久能被百度处理？</h3><p>Sitemap数据提交后，一般在1小时内百度会开始处理。处理完成的时间视文件大小和您设置的抓取周期而定。</p>
+<h3 id="提交的Sitemap都会被百度抓取并收录吗？"><a href="#提交的Sitemap都会被百度抓取并收录吗？" class="headerlink" title="提交的Sitemap都会被百度抓取并收录吗？"></a>提交的Sitemap都会被百度抓取并收录吗？</h3><p>百度对已提交的数据，不保证一定会抓取及收录所有网址。是否收录与页面质量相关。</p>
+<h3 id="XML格式的-Sitemap-中，“priority”提示会影响我的网页在搜索结果中的排名吗？"><a href="#XML格式的-Sitemap-中，“priority”提示会影响我的网页在搜索结果中的排名吗？" class="headerlink" title="XML格式的 Sitemap 中，“priority”提示会影响我的网页在搜索结果中的排名吗？"></a>XML格式的 Sitemap 中，“priority”提示会影响我的网页在搜索结果中的排名吗？</h3><p>不会。Sitemap 中的“priority”提示只是说明该网址相对于您自己网站上其他网址的重要性，并不会影响网页在搜索结果中的排名。</p>
+<h3 id="网址在-Sitemap-中的位置是否会影响它的使用？"><a href="#网址在-Sitemap-中的位置是否会影响它的使用？" class="headerlink" title="网址在 Sitemap 中的位置是否会影响它的使用？"></a>网址在 Sitemap 中的位置是否会影响它的使用？</h3><p>不会。网址在 Sitemap 中的位置并不会影响百度对它的识别或使用方式。</p>
+<h3 id="Sitemap中提交的url能否包含中文？"><a href="#Sitemap中提交的url能否包含中文？" class="headerlink" title="Sitemap中提交的url能否包含中文？"></a>Sitemap中提交的url能否包含中文？</h3><p>因为转码问题建议最好不要包含中文。</p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>希望本文可以帮助大家解决php生成sitemap.xml地图文件问题。👍</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -573,7 +737,7 @@ Route::post('/captcha/validate', 'AllController@captchaValidate');
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wxiangqian.github.io/2019/05/08/laravel/Laravel5.5%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E9%AA%8C%E8%AF%81%E7%A0%81%E7%9A%84%E8%8E%B7%E5%8F%96%E4%BB%A5%E5%8F%8A%E9%AA%8C%E8%AF%81api%E6%8E%A5%E5%8F%A3/">https://wxiangqian.github.io/2019/05/08/laravel/Laravel5.5%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E9%AA%8C%E8%AF%81%E7%A0%81%E7%9A%84%E8%8E%B7%E5%8F%96%E4%BB%A5%E5%8F%8A%E9%AA%8C%E8%AF%81api%E6%8E%A5%E5%8F%A3/</a>
+                    <a href="https://wxiangqian.github.io/2021/12/22/php/php%E7%94%9F%E6%88%90sitemap-xml%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B6/">https://wxiangqian.github.io/2021/12/22/php/php%E7%94%9F%E6%88%90sitemap-xml%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -611,8 +775,8 @@ Route::post('/captcha/validate', 'AllController@captchaValidate');
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/laravel/">
-                                    <span class="chip bg-color">laravel</span>
+                                <a href="/tags/php/">
+                                    <span class="chip bg-color">php</span>
                                 </a>
                             
                         </div>
@@ -780,31 +944,33 @@ Route::post('/captcha/validate', 'AllController@captchaValidate');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/05/10/php/phpstorm2018-3%E6%B3%A8%E5%86%8C%E7%A0%81%E6%B1%87%E6%80%BB%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/">
+                <a href="/2021/12/22/php/php%E7%94%9F%E6%88%90sitemap-xml%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B6/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="phpstorm2018.3注册码汇总（持续更新）">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="php生成sitemap.xml地图文件">
                         
-                        <span class="card-title">phpstorm2018.3注册码汇总（持续更新）</span>
+                        <span class="card-title">php生成sitemap.xml地图文件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            phpstorm2018.3注册码汇总（持续更新）
-以前经常用lanyu的http://idea.lanyus.com/
-最新phpstorm码（更新于2020-01-04）QYYBAC9D3J-eyJsaWNlbnNlSWQiOiJRWV
+                            前言首先是要交个人网站的详情页都提交给百度、360、神马、谷歌等搜索引擎。
+如果是简单的列表页，当然可以写好在放到服务器目录下。
+比如博客类动态生成的就必须每天跑脚本去追加写入了。
+本文采用的是laravel框架的command命令来跑脚本
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -817,6 +983,7 @@ Route::post('/captcha/validate', 'AllController@captchaValidate');
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -835,35 +1002,33 @@ Route::post('/captcha/validate', 'AllController@captchaValidate');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/19/laravel/Laravel-admin%E8%87%AA%E5%AE%9A%E4%B9%89excel%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE/">
+                <a href="/2021/08/30/golang/gorun%E6%88%96build%E8%BF%90%E8%A1%8C%E5%90%8E%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%B7%AF%E5%BE%84%E6%89%BE%E4%B8%8D%E5%88%B0%EF%BC%9Ano%20such%20file%20or%20directory/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Laravel-admin自定义excel导出数据">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="go run或build运行后，相对路径路径找不到：no such file or directory">
                         
-                        <span class="card-title">Laravel-admin自定义excel导出数据</span>
+                        <span class="card-title">go run或build运行后，相对路径路径找不到：no such file or directory</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-model-grid内置的导出功能只是实现了简单的csv格式文件的导出，如果遇到文件编码问题或者满足不了自己需求的情况，可以按照下面的步骤来自定义导出功能
-
-
-Laravel-admin1.5.*教程点击跳转：https://blog.c
+                            遇到的问题go build完项目后，在使用绝对路径启动时，发现报错：open ./config/my.ini: no such file or directory
+报错代码如下：
+conf, err := ini.Load(path + "
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/laravel/" class="post-category">
-                                    laravel
+                            <a href="/categories/golang/" class="post-category">
+                                    golang
                                 </a>
                             
                             
@@ -873,8 +1038,8 @@ Laravel-admin1.5.*教程点击跳转：https://blog.c
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/laravel/">
-                        <span class="chip bg-color">laravel</span>
+                    <a href="/tags/golang/">
+                        <span class="chip bg-color">golang</span>
                     </a>
                     
                 </div>
